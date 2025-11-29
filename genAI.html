@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/logo.png">
+    <title>Ethos-Generative AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+        crossorigin="anonymous">
+    </script>
+    
+    <nav class="navbar navbar-expand-lg navbar-light glassy-nav fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="nav" class="collapse navbar-collapse justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="genAI.html">GenAI</a></li>
+                <li class="nav-item"><a class="nav-link" href="ethics.html">Ethics</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html" target="_blank">Contact Us</a></li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="container py-5">
+        <div class="row">
+            <div class="col-4 fade-in-text sticky-top-column">
+                <div id="simple-list-example" class="d-flex flex-column gap-2 simple-list-example-scrollspy text-center sticky-top" style="top: 100px;">
+                    <a class="p-1 rounded" href="#simple-list-item-1">What is Generative AI?</a>
+                    <a class="p-1 rounded" href="#simple-list-item-2">How does it work?</a>
+                    <a class="p-1 rounded" href="#simple-list-item-3">What are examples of GenAI tools?</a>
+                    <a class="p-1 rounded" href="#simple-list-item-4">What can GenAI do (strengths)?</a>
+                    <a class="p-1 rounded" href="#simple-list-item-5">What are its limitations or risks?</a>
+                    <a class="p-1 rounded" href="#simple-list-item-6">References</a>
+                </div>
+            </div>
+            <div class="col-8 fade-in-text">
+                <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="20" data-bs-smooth-scroll="true" tabindex="0">
+
+                <h4 id="simple-list-item-1">What is Generative AI?</h4>
+                <p>Generative AI (commonly called GenAI) is a type of artificial intelligence (AI) that generates new content and ideas. It is a subset of artificial intelligence and machine learning. GenAI is an AI tool that creates media such as text, images, videos, sounds, code, 3D designs, animation, or other media. It produces this content in response to inputted prompts from a user. It can learn complex subjects, including human language, programming languages, art, chemistry, and biology. It reuses learned knowledge to solve new problems. While artificial intelligence is the broader concept of creating machines capable of exhibiting or exceeding human intelligence, GenAI specifically focuses on building generative models. Unlike traditional AI, which is usually designed to perform a narrow range of tasks repetitively, GenAI can produce original content in response to various user inputs.</p>
+                
+                <h4 id="simple-list-item-2">How does Generative AI work?</h4>
+                <p>Generative AI operates using machine learning models that are pre-trained on vast amounts of data. These models use neural networks to identify patterns and structures within existing data to generate new content.<br><br>The operational process can generally be broken down into three phases:</p>
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            Training and Foundation Models
+                        </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            GenAI is trained on documents and artifacts that already exist online. It "learns" from large datasets, predicting outcomes in the way humans might create on their own. The initial training creates a deep learning model called a foundation model(FM). FMs are large generative AI models trained on a broad spectrum of text and image data, serving as a base for AI systems to perform multiple tasks. FMs use learned patterns and relationships to predict the next item in a sequence. For text generation, the model predicts the next word based on context, selecting it using probability distribution techniques. Foundation models are often created using unsupervised or semi-supervised learning approaches on large, unlabeled datasets. This training process is compute-intensive, requiring thousands of clustered GPUs and weeks of processing, potentially costing millions of dollars.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            Tuning and Generation
+                        </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            After training the base FM, developers tune the model to tailor it to a specific content generation task, which involves improving its accuracy or fidelity for that task. Tuning methods include:
+                            <ul>
+                                <li><strong>Tuning:</strong> Feeding the model labeled data specific to the intended application (e.g., customer service questions and correct answers).</li>
+                                <li><strong>Reinforcement Learning with Human Feedback (RLHF):</strong> Human users evaluate generated content, allowing the model to update itself for greater accuracy or relevance.</li>
+                                <li><strong>Augmented Generation (RAG):</strong>  A framework that extends the foundation model to use relevant external sources beyond its original training data, ensuring access to current information and improving performance.</li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Model Architectures
+                        </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Generative AI uses several model architectures that have evolved rapidly:
+                            <ul>
+                                <li><strong> Transformers:</strong> The deep learning architecture behind most modern generative AI tools (like ChatGPT and GPT-4). Transformers use an attention mechanism to process entire sequences of data simultaneously, capturing context and excelling at natural language processing (NLP) and natural language understanding (NLU).</li>
+                                <li><strong>Diffusion Models:</strong> Work by first adding random noise to training data (forward diffusion) and then training the algorithm to iteratively remove the noise (reverse denoising) to create a desired, novel output. They generally offer the highest quality output for models but can be slow to run.</li>
+                                <li><strong>Variational Autoencoders (VAEs):</strong> Consist of an encoder that compresses data into a latent space (a dense mathematical representation) and a decoder that reconstructs the content into new, novel variations. VAEs can generate outputs faster, but the resulting images are generally less detailed than those from diffusion models.</li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <h4 id="simple-list-item-3">What are examples of GenAI tools?</h4>
+                <p>Popular examples of generative AI models and tools include:</p>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                        <th scope="col">Tool/Model</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ChatGPT</td>
+                            <td>Large Language Model (LLM)</td>
+                            <td>Generates human-like text, useful for research, strategy, and content creation.</td>
+                        </tr>
+                        <tr>
+                            <td>DALL-E3</td>
+                            <td>Image Generation Model</td>
+                            <td>Generates images and concept art from text prompts.</td>
+                        </tr>
+                        <tr>
+                            <td>Google Gemini</td>
+                            <td>LLM / Chatbot</td>
+                            <td>Google's large language model, accessible as a stand-alone chatbot and integrated into Google's productivity applications.</td>
+                        </tr>
+                        <tr>
+                            <td>Microsoft Copilot</td>
+                            <td>LLM</td>
+                            <td>Based on ChatGPT and integrated into Microsoft's productivity suite.</td>
+                        </tr>
+                        <tr>
+                            <td>Stable Diffusion</td>
+                            <td>Image Generation Model</td>
+                            <td>Generates photorealistic images from text inputs.</td>
+                        </tr>
+                        <tr>
+                            <td>Midjourney</td>
+                            <td>Image Generation Model</td>
+                            <td>A tool for creating original art and design.</td>
+                        </tr>
+                        <tr>
+                            <td>Amazon Q Developer</td>
+                            <td>Code Assistant</td>
+                            <td>An AI-powered assistant for software development.</td>
+                        </tr>
+                        <tr>
+                            <td>Amazon Bedrock</td>
+                            <td>Managed Service</td>
+                            <td>A fully managed service that offers a choice of high-performing FMs.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4 id="simple-list-item-4">What can GenAI do (strengths)?</h4>
+                <p>Generative AI offers significant benefits across various industries and use cases:</p>
+                <ul>
+                    <li><strong>Speed and Efficiency:</strong> GenAI tools work quickly to complete tasks and generate content, accelerating or automating labor-intensive processes. This saves time and resources for businesses.</li>
+                    <li><strong>Multiple Use Cases and Scalability:</strong> GenAI can be used in numerous situations, such as for coding, writing, research, and design. Tools are often equipped to handle multiple users and tasks without degrading performance.</li>
+                    <li><strong>Content Creation:</strong> It can generate and improve content across multiple modalities, including drafting text in a specific style, summarizing articles, outlining documents, generating generic code, creating music, and adding subtitles or dubbing to educational content.</li>
+                    <li><strong>Enhanced Productivity and Optimization:</strong> GenAI models can augment employee workflows, acting as efficient assistants. They can generate new software code suggestions, generate reports, summarize data from any source for knowledge search, and optimize different scenarios for cost reduction. For customer service, GenAI can respond naturally to human conversation and improve customer engagement.</li>
+                    <li><strong>Accelerated Research and Innovation:</strong> Algorithms can explore and analyze complex data to discover hidden patterns and trends. For example, in the pharma industry, GenAI systems are used to generate and optimize protein sequences to significantly accelerate drug discovery.</li>
+                    <li><strong>Synthetic Data Generation:</strong> GenAI can create synthetic data (e.g., synthetic patient data or 3D worlds for simulations) which is crucial for training AI models when real data is restricted, doesn't exist, or is too expensive to develop.</li>
+                    <li><strong>Dynamic Personalization:</strong>  Generative AI can analyze user preferences and history to generate personalized content in real time, leading to a more tailored and engaging user experience.</li>
+                </ul>
+                
+                <h4 id="simple-list-item-5">What are its limitations or risks?</h4>
+                <p>Despite its strengths, GenAI presents significant challenges and risks that require attention and mitigation:</p>
+                <ul>
+                    <li><strong>Inaccuracies and "Hallucinations":</strong> GenAI can "hallucinate" answers by producing content that is nonsensical or completely inaccurate, yet seems plausible. Because of the variational nature of the models, the same inputs can result in slightly or significantly different outputs, which is undesirable in applications requiring consistency, such as customer service.</li>
+                    <li><strong>Need for Human Oversight:</strong> GenAI requires human intervention because it can make mistakes, lacks true understanding, and does not possess genuine empathy. Humans must review its outputs.</li>
+                    <li><strong>Bias in Training Data:</strong> AI systems learn from existing human-created content. If that content contains societal biases or prejudices, the AI can absorb and repeat them, leading to potentially biased, unfair, or offensive content.</li>
+                    <li><strong>Privacy and Security Concerns:</strong> AI systems store user interactions and inputs, creating security risks. Sensitive personal or business information may be shared during conversations. If proprietary data is used to customize models, data privacy and security concerns arise.</li>
+                    <li><strong>High Cost and Infrastructure Scale:</strong> Training and running GenAI models require substantial computational resources. Developing and maintaining large-scale generative models requires significant capital investment, technical expertise, and massive compute infrastructure, such as hundreds of GPUs.</li>
+                    <li><strong>Lack of High-Quality Data and Data Licensing:</strong> GenAI models require high-quality, unbiased data to operate. Furthermore, organizations often struggle to secure commercial licenses to use existing datasets, which is important for avoiding intellectual property (IP) infringement issues.</li>
+                    <li><strong>Lack of True Originality:</strong> The creativity of GenAI is restricted by the data it was trained on, meaning outputs may sometimes feel derivative or repetitive.</li>
+                    <li><strong>Lack of Explainability:</strong> Many models are considered "black boxes," making it challenging to understand the complex and opaque processes by which they arrive at specific outputs.</li>
+                    <li><strong>Deepfakes:</strong> The malicious use of GenAI to create convincing, AI-generated or AI-manipulated images, video, or audio (known as deepfakes) poses a risk for spreading misinformation, damaging reputations, or executing cyberattacks.</li>
+                </ul>
+
+                <h4 id="simple-list-item-6">References</h4>
+                <ul>
+                    <li>Generative AI – What is it and How Does it Work? | NVIDIA. (n.d.). NVIDIA. https://www.nvidia.com/en-us/glossary/generative-ai/ </li>
+                    <li>Staff, C. (2025a, August 15). What is generative AI? How it works, examples, benefits, and limitations. Coursera. https://www.coursera.org/articles/what-is-generative-ai</li>
+                    <li>Stryker, C., & Scapicchio, M. (2025, November 17). Generative AI. What is Generative AI? https://www.ibm.com/think/topics/generative-ai </li>
+                    <li>What is Generative AI? - Gen AI Explained - AWS. (n.d.). Amazon Web Services, Inc. https://aws.amazon.com/what-is/generative-ai/ </li>
+                    <li> What is Generative AI? Examples & Use Cases. (n.d.). Google Cloud. https://cloud.google.com/use-cases/generative-ai</li>
+                </ul>
+                <p><strong>Note: </strong>This content was drafted with the assistance of the AI notebooklm.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer mt-5 animate-footer">
+        <div class="container py-4">
+            <div class="row">
+
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold">Ethos</h5>
+                    <p class="text-muted">Exploring the future of Artificial Intelligence with responsibility and innovation.</p>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <h6 class="fw-bold">Quick Links</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="genAI.html">Generative AI</a></li>
+                        <li><a href="ethics.html">Ethical AI</a></li>
+                        <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <h6 class="fw-bold">Follow Us</h6>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/lander.stodomingo.77" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/lndrayyy_/?hl=en" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://github.com/lstodomingo-wq" target="_blank"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="text-center text-muted small">
+                © 2025 AI Insights — All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
