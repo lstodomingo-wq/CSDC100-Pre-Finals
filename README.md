@@ -1,6 +1,8 @@
 # CSDC100-Pre-Finals
 Website that is visually appealing, easy to navigate, and educational for readers who may be new to GenAI.
 
+Website link: https://lstodomingo-wq.github.io/CSDC100-Pre-Finals/
+
 Project title: Ethos
 
 Short overview: This is an informative and user-friendly website about Generative AI FAQs and Ethical use of AI.
